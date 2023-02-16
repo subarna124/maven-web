@@ -1,7 +1,7 @@
 node{
     
     def mavenHome = tool name: "maven3.8.5"
-    echo "The job: " ${env.JOB_NAME}
+    echo "The job: ${env.JOB_NAME} "
     
     stage('Code Checkout'){
         git branch: 'development', url: 'https://github.com/subarna124/maven-web.git'
